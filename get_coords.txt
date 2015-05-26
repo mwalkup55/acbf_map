@@ -1,0 +1,6 @@
+library(ripa)
+library(png)
+img <- png::readPNG(source = 'C:/Users/mwalkup/Desktop/Utilities/Data Science/TSP_TEST/acbf2/map.png')
+plot(imagematrix(img))
+data <- locator(type='p',pch=1,col='red',lwd=1.2,cex=1.2)
+start_point <- locator(n=1,type='p',pch=4,col='blue',lwd=2)
